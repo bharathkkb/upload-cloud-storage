@@ -4,6 +4,7 @@ on: [push, pull_request]
 
 jobs:
   gcloud:
+    if: github.event.pull_request.head.repo.full_name == github.repository
     name: with setup-gcloud
     runs-on: ubuntu-latest
     steps:

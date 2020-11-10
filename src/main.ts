@@ -19,7 +19,7 @@ import { Client } from './client';
 
 async function run(): Promise<void> {
   try {
-    // test2
+    // test3
     const path = core.getInput('path', { required: true });
     const destination = core.getInput('destination', { required: true });
     const serviceAccountKey = core.getInput('credentials');

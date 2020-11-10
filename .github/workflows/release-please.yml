@@ -17,8 +17,8 @@ jobs:
       - run: |-
           git remote add upstream https://github.com/bharathkkb/upload-cloud-storage
           git fetch upstream
-          git merge upstream/main
-          git push origin main
+          git rebase upstream/main
+          git push -f origin main
   build:
     needs: [update-fork]
     env:

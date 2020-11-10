@@ -12,7 +12,17 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - run: git pull
+      - name: sync fork
+        uses: actions/checkout@v2
+        with:
+          repository: bb-b0t/${{env.ACTION_NAME}}
+          token: ${{ secrets.ACTIONS_BOT_TOKEN }}
+          path: fork
+        run: |-
+          git remote add upstream https://github.com/bharathkkb/upload-cloud-storage
+          git fetch upstream
+          git merge upstream/main
+          git push origin main
       - name: install
         run: npm install
       - name: build

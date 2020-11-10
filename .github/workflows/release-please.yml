@@ -15,7 +15,7 @@ jobs:
           repository: bb-b0t/${{env.ACTION_NAME}}
           token: ${{ secrets.ACTIONS_BOT_TOKEN }}
       - run: |-
-          git remote add upstream https://github.com/bharathkkb/upload-cloud-storage
+          git remote add upstream https://github.com/${GITHUB_REPOSITORY}
           git fetch upstream
           git checkout main
           git reset --hard upstream/main 

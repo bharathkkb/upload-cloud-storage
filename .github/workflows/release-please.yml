@@ -3,10 +3,10 @@ on:
     branches:
       - main
 name: build and release-please
+env:
+      ACTION_NAME: upload-cloud-storage
 jobs:
   update-fork:
-    env:
-      ACTION_NAME: upload-cloud-storage
     runs-on: ubuntu-latest
     steps:
       - name: sync fork
@@ -23,8 +23,6 @@ jobs:
           git push origin main -f
   build:
     needs: [update-fork]
-    env:
-      ACTION_NAME: upload-cloud-storage
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

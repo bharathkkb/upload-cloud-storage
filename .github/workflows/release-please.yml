@@ -80,7 +80,7 @@ jobs:
       - uses: GoogleCloudPlatform/release-please-action@v2.5.5
         with:
           token: ${{ secrets.ACTIONS_BOT_TOKEN }}
-          release-type: node
+          release-type: simple
           fork: true
           package-name: ${{env.ACTION_NAME}}
           bump-minor-pre-major: true
@@ -92,7 +92,7 @@ jobs:
       - uses: GoogleCloudPlatform/release-please-action@v2.5.5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          release-type: node
+          release-type: simple
           package-name: ${{env.ACTION_NAME}}
           bump-minor-pre-major: true
           command: github-release

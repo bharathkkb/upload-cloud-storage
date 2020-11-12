@@ -83,7 +83,7 @@ jobs:
           release-type: terraform-module
           #fork: true
           #package-name: ${{env.ACTION_NAME}}
-          bump-minor-pre-major: true
+          #bump-minor-pre-major: true
           #command: release-pr
 #   release-please-release:
 #     runs-on: ubuntu-latest

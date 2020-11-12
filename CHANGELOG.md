@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0](https://www.github.com/bharathkkb/upload-cloud-storage/compare/v0.1.0...v0.2.0) (2020-11-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* this should be major
+
+### Features
+
+* foo2 ([3ddb256](https://www.github.com/bharathkkb/upload-cloud-storage/commit/3ddb25653710ffaa7f2dbfe2156597c8d862b553))
+* this should be major ([a750159](https://www.github.com/bharathkkb/upload-cloud-storage/commit/a75015929da1e9d7afc38429e5844247fafe6485))
+
 ## 0.1.0 (2020-11-12)
 
 

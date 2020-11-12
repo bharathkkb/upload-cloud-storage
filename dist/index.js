@@ -7095,7 +7095,7 @@ const client_1 = __webpack_require__(976);
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            // test5
+            // test9
             const path = core.getInput('path', { required: true });
             const destination = core.getInput('destination', { required: true });
             const serviceAccountKey = core.getInput('credentials');
